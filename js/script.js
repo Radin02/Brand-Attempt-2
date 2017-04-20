@@ -106,8 +106,14 @@ function buildAndShowHomeHTML (categories) {                               // fo
     function (homeHtml) {                                                   
   //  document.querySelector("#main-content")
   //    .innerHTML = responseText;
-  // },
-        var chosenCategoryShortName = categoryMenuItems.category.short_name; 
+  // },   
+
+      // Retrieve single category snippet
+      $ajaxUtils.sendGetRequest(                                      
+        categoryHtml,
+        function (categoryHtml) {
+
+        var chosenCategoryShortName = category.short_name; 
 
       
 
