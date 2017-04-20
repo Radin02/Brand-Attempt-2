@@ -91,7 +91,7 @@ $ajaxUtils.sendGetRequest(
   //     .innerHTML = responseText;
   //       },
 
-  false); // Explicitely setting the flag to get JSON from server processed into an object literal   //changed
+  true); // Explicitely setting the flag to get JSON from server processed into an object literal   //changed
 });
 // *** finish **
 
